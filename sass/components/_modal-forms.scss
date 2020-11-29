@@ -6,22 +6,22 @@
 }
 
 .form-border {
-  background-color: var(--bg-color);
-  border: 1px solid var(--modal-field-border);
+  background-color: $bg-color;
+  border: 1px solid $modal-field-border;
   box-sizing: border-box;
   border-radius: 4px;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.form-border:hover,
-.form-border:focus {
-  border-color: var(--accent-color);
-}
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
 
-.form-border:hover + .form-svg,
-.form-border:focus + .form-svg {
-  fill: var(--accent-color);
+  &:hover + .form-svg,
+  &:focus + .form-svg {
+    fill: $accent-color;
+  }
 }
 
 .form-svg {
@@ -51,15 +51,15 @@
   padding: 12px 16px;
 
   font-size: 14px;
-}
 
-.form-field textarea::placeholder {
-  font-size: 14px;
+  &::placeholder {
+    font-size: 14px;
 
-  line-height: 1.16;
-  letter-spacing: 0.01em;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
 
-  color: var(--modal-textarea-placeholder);
+    color: $modal-textarea-placeholder;
+  }
 }
 
 .form-title {
@@ -70,7 +70,7 @@
 
   letter-spacing: 0.01em;
 
-  color: var(--text-color);
+  color: $text-color;
 }
 
 .icon {
@@ -80,15 +80,15 @@
 
   width: 15px;
   height: 15px;
-  border: 2px solid var(--modal-checkbox);
+  border: 2px solid $modal-checkbox;
   border-radius: 4px;
   transition: transform 250ms linear;
 }
 
 .input-checkbox:checked + .icon {
   background-origin: border-box;
-  border-color: var(--accent-color);
-  background-color: var(--accent-color);
+  border-color: $accent-color;
+  background-color: $accent-color;
   background-image: url(../images/icon-check.svg);
   background-size: contain;
 }

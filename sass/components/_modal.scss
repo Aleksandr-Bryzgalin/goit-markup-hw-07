@@ -6,7 +6,7 @@
   width: 100%;
   height: 100%;
 
-  background-color: var(--bg-modal);
+  background-color: $bg-modal;
   z-index: 1;
 }
 
@@ -26,7 +26,7 @@
 
   padding: 40px;
 
-  background-color: var(--bg-color);
+  background-color: $bg-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
@@ -45,23 +45,23 @@
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
-  background-color: var(--bg-color);
+  background-color: $bg-color;
 
   cursor: pointer;
+
+  &:hover .close-svg,
+  &:focus .close-svg {
+    fill: $accent-color;
+  }
 }
 
 .close-svg {
   position: absolute;
-  fill: var(--modal-close-black);
+  fill: $modal-close-black;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-close:hover .close-svg,
-.button-close:focus .close-svg {
-  fill: var(--accent-color);
 }
 
 .modal-title {
@@ -75,7 +75,7 @@
 
   letter-spacing: 0.03em;
 
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 
 .modal-button-submit {
@@ -87,21 +87,21 @@
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
-}
 
-.modal-agree a {
-  color: var(--accent-color);
-  text-decoration: underline;
-}
+  a {
+    color: $accent-color;
+    text-decoration: underline;
+  }
 
-.modal-agree input[type='checkbox'] {
-  opacity: 0;
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  input[type='checkbox'] {
+    opacity: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 }

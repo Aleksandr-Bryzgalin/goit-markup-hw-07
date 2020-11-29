@@ -24,8 +24,8 @@ p {
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: $bg-color;
+  color: $text-color;
 
   font-family: roboto, sans-serif;
   letter-spacing: 0.03em;
