@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
     <!--Шапка сайта-->
@@ -48,12 +48,12 @@
       <section class="section">
         <div class="container">
           <h1 class="visually-hidden">Портфолио</h1>
-          <ul class="list button-container">
-            <li class="dutton-item"><button type="button" class="button-filter">Все</button></li>
-            <li class="dutton-item"><button type="button" class="button-filter">Веб-сайты</button></li>
-            <li class="dutton-item"><button type="button" class="button-filter">Приложения</button></li>
-            <li class="dutton-item"><button type="button" class="button-filter">Дизайн</button></li>
-            <li class="dutton-item"><button type="button" class="button-filter">Маркетинг</button></li>
+          <ul class="list filter-container">
+            <li class="filter-item"><button type="button" class="button-filter">Все</button></li>
+            <li class="filter-item"><button type="button" class="button-filter">Веб-сайты</button></li>
+            <li class="filter-item"><button type="button" class="button-filter">Приложения</button></li>
+            <li class="filter-item"><button type="button" class="button-filter">Дизайн</button></li>
+            <li class="filter-item"><button type="button" class="button-filter">Маркетинг</button></li>
           </ul>
           <ul class="list projects-container">
             <li class="projects-elements">
@@ -245,10 +245,10 @@
       <div class="container footer-box">
         <div>
           <a href="./index.html" class="logo-footer"><span class="accent-logo">Web</span>Studio</a>
-          <address class="address-footer">
-            <p class="address address-footer-item">г. Киев, пр-т Леси Украинки, 26</p>
-            <a href="mailto:info@devstudio.com" class="link address-footer-item">info@example.com</a>
-            <a href="tel:+380961111111" class="link address-footer-item">+38 099 111 11 11</a>
+          <address class="contacts-footer">
+            <p class="contacts-footer-address contacts-footer-item">г. Киев, пр-т Леси Украинки, 26</p>
+            <a href="mailto:info@devstudio.com" class="link contacts-footer-item">info@example.com</a>
+            <a href="tel:+380961111111" class="link contacts-footer-item">+38 099 111 11 11</a>
           </address>
         </div>
         <div class="footer-link-box">
@@ -295,7 +295,8 @@
               <label for="mail"></label>
               <input class="input-footer" type="email" name="mail" id="mail" placeholder="E-mail">
             </form>
-            <button class="button-footer" type="submit">Подписаться<svg class="footer-form-svg" width="24px" height="24px">
+            <button class="button button-footer" type="submit">Подписаться<svg class="footer-form-svg" width="24px"
+                height="24px">
                 <use href="./images/symbol-defs.svg#icon-plane"></use>
               </svg>
             </button>
